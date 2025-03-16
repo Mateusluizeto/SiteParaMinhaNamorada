@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ef4f4f;
+} 
+
+header{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+header > h1{
+    font-family: "Love Ya Like A Sister", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    font-size: 1.5em;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main, section{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#coracaoH1{
+    height: 50px;
+    width: 50px;
+}
+
+#campoImagens{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+  
+}
+
+#img1{
+    background-image: url('imagens/WhatsApp\ Image\ 2025-03-16\ at\ 11.42.03.jpeg');
+    background-size: cover;
+}
+
+#img2{
+    background-image: url('imagens/WhatsApp\ Image\ 2025-03-16\ at\ 11.42.03\ \(1\).jpeg');
+    background-size: cover; 
+    background-position: center center;
+}
+
+#img3{
+    background-image: url('imagens/WhatsApp\ Image\ 2025-03-16\ at\ 11.42.04.jpeg');
+    background-size: cover;
+    background-position: center -40px;
+}
+
+#buttonDoContador{
+    margin-top: 30px;
+    background-color: rgb(241, 56, 56);
+    border: none;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#buttonDoContador:hover{
+    background-color: rgb(194, 47, 47);
+}
+
+#cartaoDeMensagem{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.496);
+}
+
+section{
+    font-family: "Love Ya Like A Sister", sans-serif;
+    width: 70%;
+    position: relative;
+}
+
+section > h1{
+    margin-right: 10px;
+}
+
+#coracaoNaMensagem{
+    height: 50px;
+    width: 50px;
+}
+
+#mensagemCarinhosa{
+    line-height: 25px;
+    text-align: justify;
+}
+
+#buttonClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#buttonClose:hover{
+    transform: scale(1.1);
+}
+
+#lista{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#topicos{
+    margin-bottom: 50px;
+}

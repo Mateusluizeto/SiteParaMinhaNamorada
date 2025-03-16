@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site para minha amada!</title>
+    <link rel="shortcut icon" href="imagens/coracao.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Feito com muito amor pelo seu namorado</h1>
+        <div id="campoImagens">
+            <div class="img" id="img1">
+    
+            </div>
+            <div class="img" id="img2">
+
+            </div>
+            <div class="img" id="img3">
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <h1>Tempo desde que nos conhecemos <img src="imagens/coracaoHumano.png" id="coracaoH1" alt=""> </h1>
+            <div id="timer">Carregando... </div>
+            <button id="buttonDoContador">Clique Aqui</button>
+        </main>
+    </div>
+
+    <div id="cartaoDeMensagem" class="hide">
+        <section>
+            <h1>Mensagens especial para a minha pessoa favorita <img src="imagens/coracao.png" id="coracaoNaMensagem" alt=""></h1>
+            <p id="mensagemCarinhosa">Oi minha princesinha, eu acho que esse site poderia ter ficado melhor, mas como eu to muito tempo sem fazer essas coisas foi oque eu consegui fazer mesmo.
+                Queria te dizer que eu sou a pessoa mais sortuda do mundo por ter você fazendo parte da minha vida, apesar que eu fique te chamando de chatinha, você realmente é as vezes, mas você é MINHA CHATINHA,
+                somente minha e pra sempre minha, eu te amo demais, vc faz meus dias 100% melhores, eu quero que seja você pra sempre, minha namorada, minha melhor amiga, minha esposa, minha alma gêmea, meu refúgio e minha luz.
+                Eu não sei se eu vou conseguir tudo que eu quero na minha vida, ter minha casona, meu carrão, mas com certeza o maior medo que eu tenho é de nao ter você na minha vida adulta.
+                Eu quero sempre o melhor de tudo pra você, eu te amo muito, eu não sei oque eu seria sem você. 
+                Enfim meu bem, eu espero que isso tenha te lembrado que eu te amo demais mesmo e que eu sempre vou estar aqui com vc, me desculpe por ser sem paciência com você e as vezes 
+                ficar de cara fechada pra você, eu quero sempre te tratar o melhor que eu puder. Você merece e tem potencial pra conquistar o mundo todo, o mundo é seu!!!
+                <br>EU TE AMO MEU AMORZÃO!!!!!!!!!! 
+            </p>
+
+            <button id="buttonClose"><img src="imagens/close.svg" alt="botao para fechar a mensagem"></button>
+        </section>
+    </div>
+
+    <div class="container" id="topicos">
+        <main>
+            <h1>Coisas que eu amo em você:</h1>
+            <div id="lista">
+                <ol type="1" >
+                    <li>Seu cabelinho</li>
+                    <li>Seu sorriso</li>
+                    <li>A forma que você me trata</li>
+                    <li>Seu rostinho de anjo</li>
+                    <li>Seu jeito carinhoso</li>
+                </ol>
+                <ol type="1" start="6">
+                    <li>Sua inteligência</li>
+                    <li>O qunato vc me ama</li>
+                    <li>Amo que vc ama jogar cmg</li>
+                    <li>Eu amo passar meus dias com você</li>
+                    <li>EU AMO TUDO EM VOCÊ!!!!!!</li>
+                </ol>
+            </div>
+        </main>
+    </div>
+
+    <audio id="backgroundMusic" autoplay loop muted="false">
+        <source src="audio/Daniel Caesar - Best Part (Audio) ft. H.E.R..mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let music = document.getElementById("backgroundMusic");
+            music.muted = false; // Garante que não está mudo
+            let playPromise = music.play();
+
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    document.body.addEventListener("click", () => {
+                        music.play();
+                    }, { once: true });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
