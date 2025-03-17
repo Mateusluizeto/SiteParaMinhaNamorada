@@ -42,3 +42,44 @@ function helloMessage(){
 function byeMessage(){
     cartaoDeMensagem.classList.add('hide')
 }
+
+
+const foto1 = document.querySelector('#img1')
+const foto2 = document.querySelector('#img2')
+const foto3 = document.querySelector('#img3')
+const teamo1 = document.querySelector('#teamo1')
+const teamo2 = document.querySelector('#teamo2')
+const teamo3 = document.querySelector('#teamo3')
+
+foto1.addEventListener('mouseenter', foto1Mouseenter)
+foto1.addEventListener('mouseout', foto1Mouseout)
+foto2.addEventListener('mouseenter', foto2Mouseenter)
+foto2.addEventListener('mouseout', foto2Mousout)
+foto3.addEventListener('mouseenter', foto3Mouseenter)
+foto3.addEventListener('mouseout', foto3Mousout)
+
+
+function foto1Mouseenter(){
+    teamo1.classList.remove('hide')
+}
+
+function foto1Mouseout(){
+    teamo1.classList.add('hide')
+}
+
+function foto2Mouseenter(){
+    teamo2.classList.remove('hide')
+} 
+
+function foto2Mousout(){
+    teamo2.classList.add('hide')
+}
+
+function foto3Mouseenter(){
+    teamo3.classList.remove('hide')
+}
+
+function foto3Mousout(){
+    teamo3.classList.add('hide')
+}
+
