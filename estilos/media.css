@@ -8,7 +8,7 @@ Telas Grandes: acima de 1200px
 
 @media screen and (max-width: 1000px) {
     body{
-        background-color: #00ff4c;
+        background-color: #ef4f4f;
     }
     header{
         width: 90%;
@@ -47,9 +47,5 @@ Telas Grandes: acima de 1200px
     #mensagemCarinhosa{
         font-size: 15px;
         line-height: 20px;
-    }
-
-    #tituloDaCartinha{
-        margin-top: 5px;
     }
 }
