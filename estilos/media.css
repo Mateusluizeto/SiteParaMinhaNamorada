@@ -8,7 +8,7 @@ Telas Grandes: acima de 1200px
 
 @media screen and (max-width: 1000px) {
     body{
-        background-color: #ef4f4f;
+        background-color: #00ff4c;
     }
     header{
         width: 90%;
@@ -50,6 +50,6 @@ Telas Grandes: acima de 1200px
     }
 
     #tituloDaCartinha{
-        margin-top: 15px;
+        margin-top: 5px;
     }
 }
