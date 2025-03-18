@@ -1,3 +1,16 @@
+//VARIÁVEIS
+const buttonMessage = document.querySelector('#buttonDoContador')
+const buttonCloseMessage = document.querySelector('#buttonClose')
+const cartaoDeMensagem = document.querySelector('#cartaoDeMensagem')
+
+const foto1 = document.querySelector('#img1')
+const foto2 = document.querySelector('#img2')
+const foto3 = document.querySelector('#img3')
+const teamo1 = document.querySelector('#teamo1')
+const teamo2 = document.querySelector('#teamo2')
+const teamo3 = document.querySelector('#teamo3')
+
+//FUNÇÃO DO CONTADOR DE TEMPO
 function updateTimer() {
     const startDate = new Date("2023-11-15T00:00:00");
     const now = new Date();
@@ -28,10 +41,7 @@ function updateTimer() {
 setInterval(updateTimer, 1000);
 updateTimer();
 
-const buttonMessage = document.querySelector('#buttonDoContador')
-const buttonCloseMessage = document.querySelector('#buttonClose')
-const cartaoDeMensagem = document.querySelector('#cartaoDeMensagem')
-
+//FUNÇÃO PARA APARECER O CARTAO DA MENSAGEM
 buttonMessage.addEventListener('click', helloMessage)
 buttonCloseMessage.addEventListener('click', byeMessage)
 
@@ -44,13 +54,7 @@ function byeMessage(){
 }
 
 
-const foto1 = document.querySelector('#img1')
-const foto2 = document.querySelector('#img2')
-const foto3 = document.querySelector('#img3')
-const teamo1 = document.querySelector('#teamo1')
-const teamo2 = document.querySelector('#teamo2')
-const teamo3 = document.querySelector('#teamo3')
-
+// FUNÇÃO PARA AS FOTOS SE MECHEREM E MOSTRAR A MENSAGEM EM BAIXO
 foto1.addEventListener('mouseenter', foto1Mouseenter)
 foto1.addEventListener('mouseout', foto1Mouseout)
 foto2.addEventListener('mouseenter', foto2Mouseenter)
@@ -83,3 +87,17 @@ function foto3Mousout(){
     teamo3.classList.add('hide')
 }
 
+//FUNÇÃO PARA O AUDIO FUNCIONAR
+document.addEventListener("DOMContentLoaded", function() {
+    let music = document.getElementById("backgroundMusic");
+    music.muted = false; // Garante que não está mudo
+    let playPromise = music.play();
+
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
+            document.body.addEventListener("click", () => {
+                music.play();
+            }, { once: true });
+        });
+    }
+});

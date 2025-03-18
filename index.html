@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site para minha amada!</title>
     <link rel="shortcut icon" href="imagens/coracao.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css" media="all">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -37,7 +38,7 @@
     </div>
 
     <div id="cartaoDeMensagem" class="hide">
-        <section>
+        <section id="sectionDaMensagem">
             <h1>Mensagens especial para a minha pessoa favorita <img src="imagens/coracao.png" id="coracaoNaMensagem" alt=""></h1>
             <p id="mensagemCarinhosa">Oi minha princesinha, eu acho que esse site poderia ter ficado melhor, mas como eu to muito tempo sem fazer essas coisas foi oque eu consegui fazer mesmo.
                 Queria te dizer que eu sou a pessoa mais sortuda do mundo por ter você fazendo parte da minha vida, apesar que eu fique te chamando de chatinha, você realmente é as vezes, mas você é MINHA CHATINHA,
@@ -80,20 +81,5 @@
         Seu navegador não suporta o elemento de áudio.
     </audio>
     
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let music = document.getElementById("backgroundMusic");
-            music.muted = false; // Garante que não está mudo
-            let playPromise = music.play();
-
-            if (playPromise !== undefined) {
-                playPromise.catch(() => {
-                    document.body.addEventListener("click", () => {
-                        music.play();
-                    }, { once: true });
-                });
-            }
-        });
-    </script>
 </body>
 </html>

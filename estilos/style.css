@@ -109,18 +109,18 @@ main, section{
 }
 
 #img1{
-    background-image: url('imagens/WhatsApp\ Image\ 2025-03-16\ at\ 11.42.03.jpeg');
+    background-image: url('../imagens/WhatsApp\ Image\ 2025-03-16\ at\ 11.42.03.jpeg');
     background-size: cover;
 }
 
 #img2{
-    background-image: url('imagens/WhatsApp\ Image\ 2025-03-16\ at\ 11.42.03\ \(1\).jpeg');
+    background-image: url('../imagens/WhatsApp\ Image\ 2025-03-16\ at\ 11.42.03\ \(1\).jpeg');
     background-size: cover; 
     background-position: center center;
 }
 
 #img3{
-    background-image: url('imagens/WhatsApp\ Image\ 2025-03-16\ at\ 11.42.04.jpeg');
+    background-image: url('../imagens/WhatsApp\ Image\ 2025-03-16\ at\ 11.42.04.jpeg');
     background-size: cover;
     background-position: center -40px;
 }
