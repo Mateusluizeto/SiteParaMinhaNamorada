@@ -8,7 +8,7 @@ Telas Grandes: acima de 1200px
 
 @media screen and (max-width: 1000px) {
     body{
-        background-color: blue;
+        background-color: #ef4f4f;
     }
     header{
         width: 90%;
