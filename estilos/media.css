@@ -43,5 +43,10 @@ Telas Grandes: acima de 1200px
 
     #mensagemCarinhosa{
         font-size: 15px;
+        line-height: 20px;
+    }
+
+    #tituloDaCartinha{
+        margin-top: 50px;
     }
 }
