@@ -228,8 +228,10 @@ section > h1{
 }
 
 .buttonDoCardLateral{
-    border-radius: 9999px;
+    border-radius: 10px;
+    font-weight: bold;
     margin-right: 20px;
+    padding: 20px;
     border: none;
     cursor: pointer;
     transition: 0.3s;
