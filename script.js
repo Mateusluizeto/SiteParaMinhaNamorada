@@ -88,8 +88,8 @@ function foto3Mousout(){
 }
 
 //FUNÇÃO PARA O AUDIO FUNCIONAR
+let music = document.getElementById("backgroundMusic");
 document.addEventListener("DOMContentLoaded", function() {
-    let music = document.getElementById("backgroundMusic");
     music.muted = false; // Garante que não está mudo
     let playPromise = music.play();
 
@@ -101,3 +101,76 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+//Card Lateral
+const divButtonCardLateralEntrar = document.querySelector('#divButtonCardLateralEntrar')
+const divButtonCardLateralSair = document.querySelector('#divButtonCardLateralSair')
+const botaoParaEntrar = document.querySelector('#botaoParaEntrar')
+const botaoParaSair = document.querySelector('#botaoParaSair')
+
+const card = document.querySelector('article')
+
+botaoParaEntrar.addEventListener('click', botaoEntrar)
+botaoParaSair.addEventListener('click', botaoSair)
+
+function botaoEntrar(){
+    divButtonCardLateralEntrar.classList.add('hide')
+    divButtonCardLateralSair.classList.remove('hide')
+
+    card.classList.remove('hide')
+}
+
+function botaoSair(){
+    divButtonCardLateralEntrar.classList.remove('hide')
+    divButtonCardLateralSair.classList.add('hide')
+
+    card.classList.add('hide')
+}
+
+// JOGO DA ADVINHAÇÃO:
+
+let randomNumber = Math.round(Math.random() * 10)
+let numberClient = document.querySelector('#numberClient')
+const buttonVerificar = document.querySelector('#buttonDoJoguinho')
+const errorMessage = document.querySelector('#errorMessage')
+const acertoMessage = document.querySelector('#acerto')
+
+const gameArea = document.querySelector('#gameArea')
+
+buttonVerificar.addEventListener('click', play)
+
+function play(){
+    if(randomNumber == Number(numberClient.value)){
+        gameArea.classList.add('aumentar')
+        gameArea.classList.remove('diminuir')
+
+        acertoMessage.classList.remove('hide')
+        errorMessage.classList.add('hide')
+    } else if(randomNumber != Number(numberClient.value)){
+        gameArea.classList.remove('aumentar')
+        gameArea.classList.add('diminuir')
+
+        errorMessage.classList.remove('hide')
+        acertoMessage.classList.add('hide')
+        
+    }
+}
+
+// botao do video 
+
+const buttonDaSurpresa = document.querySelector('#buttonDaSurpresa')
+const areaDoVideoSurpresa = document.querySelector('#areaDoVideoSurpresa')
+
+buttonDaSurpresa.addEventListener('click', botaoDaSurpresa)
+
+function botaoDaSurpresa(){
+    areaDoVideoSurpresa.classList.remove('hide')
+    music.muted = true;
+}
+
+// button de sair do video
+
+let buttonVideoExit = document.querySelector('#sairDaTelaDoVD')
+buttonVideoExit.addEventListener('click', () => {
+    areaDoVideoSurpresa.classList.add('hide')
+})

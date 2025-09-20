@@ -76,10 +76,39 @@
         </main>
     </div>
 
+    <!--Card Lateral-->
+    <div id="divButtonCardLateralEntrar">
+        <button class="buttonDoCardLateral" id="botaoParaEntrar"><img src="/imagens/arrow_back_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Seta para trás" class="seta"></button>
+    </div>
+    <div id="divButtonCardLateralSair" class="hide">
+        <button class="buttonDoCardLateral" id="botaoParaSair"><img src="/imagens/arrow_forward_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Seta para trás" class="seta"></button>
+    </div>
+
+    <article class="hide">
+        <div id="gameArea">
+            <h1>Vamos fazer um joguinho</h1>
+            <p>Adivinhe um número de 1 a 10, e você vai ter um prêmio</p>
+            <div id="areaDeInteracao">
+                <input type="number" min="0" max="10" id="numberClient"> <button id="buttonDoJoguinho">Verificar</button>
+            </div>
+                <p class="hide" id="errorMessage">ERROUUUUUUUU <img src="imagens/ImagemX.png" alt="ImagemX" id="imgXVermelho"></p>
+            <div id="acerto" class="hide">
+                <p id="mensagemDeAcerto">Boa, acertou!! <img src="imagens/ImagemCheck.png" alt="ImagemCheck"></p> 
+               <p>Clique no botão pra você ver a surpresa:</p> 
+               <button id="buttonDaSurpresa">Aqui</button>
+            </div>
+            
+    </div>
+    </article>
+
+    <div id="areaDoVideoSurpresa" class="hide">
+        <button id="sairDaTelaDoVD"> Sair </button>
+        <video src="video/videoDaNicolly.mov" controls></video>
+    </div>
+    
     <audio id="backgroundMusic" autoplay loop muted="false">
         <source src="audio/Daniel Caesar - Best Part (Audio) ft. H.E.R..mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
-    
 </body>
 </html>
